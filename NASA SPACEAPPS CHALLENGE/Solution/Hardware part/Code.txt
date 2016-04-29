@@ -1,0 +1,75 @@
+// Arduino Code For Martian KIT by Abhra Dass
+int echo=7;
+int trig=8;
+int x=A1;
+int y=A0;
+int a=3; //hand
+long duration;
+int distance;
+char rec;
+int b=6; // foot
+
+void setup() {
+pinMode(trig,OUTPUT);
+pinMode(echo,INPUT);
+pinMode(x,INPUT);
+pinMode(y,INPUT);
+Serial.begin(9600);
+pinMode(a,OUTPUT);  
+pinMode(b,OUTPUT);
+
+Serial.println("Enter the following options :");
+Serial.println("1. Enter 'Q' to VIBRATE HAND motor ");
+Serial.println("2. Enter 'w' to VIBRATE FOOT motor ");
+Serial.println("3. Enter 'E' to obtain Sensor data ");
+}
+
+void loop() {
+  while(Serial.available()>0)
+  {
+    rec=Serial.read();
+  }
+  if(rec=='q')
+  {
+   Serial.println(" Hand Vibration INTIATED");
+ 
+   digitalWrite(a,HIGH);
+  delay(1000);
+  digitalWrite(a,LOW);
+  delay(1000);
+   }
+ else if(rec=='w')
+   { 
+    Serial.println("FOOT vibration INITATED ");
+
+  digitalWrite(b,HIGH);
+  delay(1000);
+  digitalWrite(b,LOW);
+  delay(1000);
+   }
+ else if(rec=='e')
+  { 
+   Serial.println("Printing Sensor Data "); 
+  digitalWrite(trig,LOW);
+  delayMicroseconds(2);
+  digitalWrite(trig, HIGH);
+delayMicroseconds(10);
+digitalWrite(trig, LOW);
+// Reads the echoPin, returns the sound wave travel time in microseconds
+duration = pulseIn(echo, HIGH);
+// Calculating the distance
+distance= duration*0.034/2;
+// Prints the distance on the Serial Monitor
+Serial.print("Throttle :");
+Serial.println(map(distance,2,13,10,100));
+delay(500);
+
+Serial.print("X-Axis: ");
+Serial.println(analogRead(x));
+delay(500);
+
+Serial.print("Y-Axis: ");
+Serial.println(analogRead(y));
+delay(500);
+ }
+}

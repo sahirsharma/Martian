@@ -1,0 +1,14 @@
+Future Aspects
+
+When we first took up the project for the Space Apps hackathon, we had no idea how huge the
+applications and extents of the project could be to be confined within a few days around the hackathon.
+So we decided to continue to work upon this simulator even after the Challenge had ended to add interesting and useful funcionalities and features. Here we list the ideas we have in mind,
+at least as of now.
+
+The biggest plan is to make the explorable terrain entirely open world. Working on a limited terrain right now due to limited resources, like an upload server, we plan to make the entire charted map of Mars explorable in the simulator. Having access to DTM files through government websites, which keep sattelite image files of Mars open source, we can generate 3D mesh terrain of the map. Stitching those terrains 
+together at run-time according to the player position is what we plan to do. All the terrain files are be uploaded on a dedicated server, due to the sheer number of files.
+
+The simulator currently focuses on exploration, but it would be more fun if it's educational as well.
+Marking certain terrain meshes as landmark locations, we can display on the simulator HUD the nearest 
+landmark, like a crater or a volcano, giving directions to the player to reach there and information 
+associated with the landmark.

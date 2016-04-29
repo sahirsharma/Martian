@@ -1,0 +1,19 @@
+I am Matt, Matt Daemon, and I started using this new immersive app "THE MARTIAN"!!    
+The app demonstrates an FPV(First Person View). It uses Google Cardboard with an Android phone in conjuction with mechanical input throttle and joystick, haptic feedback mechanisms in the form of vibration motors. The thrusters and joysticks can be mounted on the armrests of a chair. Its fully modular and can be assembled easily. I will briefly cover the setup.
+
+A Bluetooth connection is required for the communication between the feedback systems
+and the phone. Use the phone to detect the device Bluetooth named "Mars_VR" and pair 
+it with your phone. Power up the application and connect the phone to the computer.
+Insert the phone into Google Cardboard and put it on. 
+Once the assembly is complete, you are ready for your OTHER-WORLDLY journey. When you start off, you spawn on Mars near your base with a cool rover in the distance, which you can drive by the way. A digital HUD informs you about the altitude, pressure, geographical 
+position and other data. You can now start exploring. The app covers the entire planet of 
+Mars from its highest mountains to it deepest craters. You can choose to Mars-walk
+as far as your feet can take you but beware of limited oxygen. Fortunately, a bar on the
+HUD gives the current oxygen level and you can head back the moment you think you can be
+in danger. Moreover, if you want to explore too far from the base, you can always send the 
+rover and control it yourself while getting a full view from the rover camera. 
+
+Its a completely open world simulation with precise atmospheric and geographical data. 
+So get your hands on it, all you old and new astronauts. No longer will you have to try 
+and spot the red planet from telescopes on rooftops, give up on a cloudy night.
+All you have to do is put on a headset and EXPLORE!! 

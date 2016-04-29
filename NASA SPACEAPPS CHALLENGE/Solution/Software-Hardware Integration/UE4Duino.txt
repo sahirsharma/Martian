@@ -1,0 +1,19 @@
+Integration of Arduino with Unreal Engine 4
+
+We use the UE4duino pulgin for integrating the Hardware with Software component of the project.
+
+The plugin had 4 Modes:
+1. Open Serial
+2. Write Serial
+3. Read Serial
+4. Close Serial
+
+When the app starts:
+*We use 'Open Serial' to start reading the Serail port connected over Bluetooth
+*'Read Serial' enables the app to read user hardware inputs such as (Throttle and Joystick)
+*'Write Serial' enables the app to provide a response to the Arduino, which is in this case is for haptic feedback
+ actuation using vibration motors
+* 'Stop Serial' enables the app to stop communication with the Arduino hardware(When we close the app
+  OR when the app starts providing inappropiate Feedback)
+
+Link to Learn More : https://forums.unrealengine.com/showthread.php?68643-UE4Duino-Arduino-to-UE4-plugin-Release!
